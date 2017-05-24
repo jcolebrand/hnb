@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hnb", "hnb\hnb.csproj", "{7CE2D1FC-2B3E-4FB5-8B98-F38415D630DD}"
 EndProject
 Global
@@ -13,5 +14,8 @@ Global
 		{7CE2D1FC-2B3E-4FB5-8B98-F38415D630DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CE2D1FC-2B3E-4FB5-8B98-F38415D630DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CE2D1FC-2B3E-4FB5-8B98-F38415D630DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
