@@ -2,9 +2,57 @@
 <html>
 <head>
     <title>Hearts and Bones Rescue - @ViewBag.Title</title>
+    <style>
+		body > div {
+		    width: 1200px;
+			margin: auto;
+		}
+		.header-tab-container {
+            display: table;
+	        overflow: hidden;
+			width: 100%;
+		}
+		.header-tab-container .header-tab {
+		    width: 11%;
+            display: table-cell;
+            text-align: center;
+		    vertical-align: middle;
+		    margin: 3px auto;
+		    text-align: center;
+			height: 100px;
+            text-overflow: clip;
+		}
+		.header-tab-container .header-tab a {
+			height: 90%; width: 90%;
+            font-size: 30px;
+			color: black;
+			text-decoration: none;
+		}
+
+        body > div > div > h2.title {
+		    margin: 0 auto;
+		    width: 100%;
+		    text-align: center;
+		    font-size: 60px;
+		}
+	</style>
 </head>
 <body>
-    <div style="width: 60%; margin: auto;">
+    <div>
+		<div class="header-tab-container">
+			<a href="/"><img src="/Images/Heart.svg" height="100px" /></a>
+            <div class="header-tab"><a href="/Home/Meet">Meet the pups</a></div>
+            <div class="header-tab"><a href="/Home/Adopt">Adopt</a></div>
+            <div class="header-tab"><a href="/Home/Foster">Foster</a></div>
+            <div class="header-tab"><a href="/Home/Volunteer">Volunteer</a></div>
+            <div class="header-tab"><a href="/Home/About">About</a></div>
+            <div class="header-tab"><a href="/Home/Blog">Blog</a></div>
+            <div class="header-tab"><a href="/Home/Contact">Contact</a></div>
+            <div class="header-tab"><a href="/Home/Donate">Donate</a></div>
+		</div>
+		<div>
+			<h2 class="title">@RenderSection("Title")</h2>
+		</div>
 	@RenderBody()
 	</div>
 </body>

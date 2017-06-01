@@ -11,12 +11,46 @@ namespace hnb.Controllers
     {
         public ActionResult Index()
         {
-            var mvcName = typeof(Controller).Assembly.GetName();
-            var isMono = Type.GetType("Mono.Runtime") != null;
+            return View();
+        }
 
-            ViewData["Version"] = mvcName.Version.Major + "." + mvcName.Version.Minor;
-            ViewData["Runtime"] = isMono ? "Mono" : ".NET";
+        public ActionResult Meet()
+        {
+            return View();
+        }
 
+        public ActionResult Adopt()
+        {
+            return View();
+        }
+
+        public ActionResult Foster()
+        {
+            return View();
+        }
+
+        public ActionResult Volunteer()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Blog()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult Donate()
+        {
             return View();
         }
     }
