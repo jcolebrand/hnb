@@ -286,3 +286,12 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# Mac specific
+*.DS_Store
+
+#Front end related
+*.css
+*.min.css
+*.map
+*.min.js
