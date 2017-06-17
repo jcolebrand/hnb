@@ -1,59 +1,66 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Hearts and Bones Rescue - @ViewBag.Title</title>
-    <style>
-		body > div {
-		    width: 1200px;
-			margin: auto;
-		}
-		.header-tab-container {
-            display: table;
-	        overflow: hidden;
-			width: 100%;
-		}
-		.header-tab-container .header-tab {
-		    width: 11%;
-            display: table-cell;
-            text-align: center;
-		    vertical-align: middle;
-		    margin: 3px auto;
-		    text-align: center;
-			height: 100px;
-            text-overflow: clip;
-		}
-		.header-tab-container .header-tab a {
-			height: 90%; width: 90%;
-            font-size: 30px;
-			color: black;
-			text-decoration: none;
-		}
 
-        body > div > div > h2.title {
-		    margin: 0 auto;
-		    width: 100%;
-		    text-align: center;
-		    font-size: 60px;
-		}
-	</style>
+    @* Recommended meta tags for bootstrap *@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="/Styles/materialize/materialize.min.css">
+	<link rel="stylesheet" href="/Styles/site.min.css">
 </head>
+
 <body>
-    <div>
-		<div class="header-tab-container">
-			<a href="/"><img src="/Images/Heart.svg" height="100px" /></a>
-            <div class="header-tab"><a href="/Home/Meet">Meet the pups</a></div>
-            <div class="header-tab"><a href="/Home/Adopt">Adopt</a></div>
-            <div class="header-tab"><a href="/Home/Foster">Foster</a></div>
-            <div class="header-tab"><a href="/Home/Volunteer">Volunteer</a></div>
-            <div class="header-tab"><a href="/Home/About">About</a></div>
-            <div class="header-tab"><a href="/Home/Blog">Blog</a></div>
-            <div class="header-tab"><a href="/Home/Contact">Contact</a></div>
-            <div class="header-tab"><a href="/Home/Donate">Donate</a></div>
+	<header class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a class="brand-logo center f-marker" href="/">Hearts&amp;Bones</a>
+				<a href="#" data-activates="sidebar_nav" class="button-collapse"><i class="material-icons">menu</i></a>
+				
+				<ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li class="nav-item"><a class="nav-link" href="/Home/Meet">Meet the pups</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Adopt">Adopt</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Foster">Foster</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Volunteer">Volunteer</a></li>
+				</ul>
+
+				<ul class="side-nav" id="sidebar_nav">
+					<li class="side-item"><a class="side-link" href="/Home/Meet">Meet the pups</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Adopt">Adopt</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Foster">Foster</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Volunteer">Volunteer</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/About">About</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Blog">Blog</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Contact">Contact</a></li>
+					<li class="side-item"><a class="side-link" href="/Home/Donate">Donate</a></li>
+				</ul>
+				
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li class="nav-item"><a class="nav-link" href="/Home/About">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Blog">Blog</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Contact">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="/Home/Donate">Donate</a></li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+		
+    <main class="container">
+		<h2 class="title">@RenderSection("Title")</h2>
+			
+		<div class="body-content" id="content">	
+	    	@RenderBody()
 		</div>
-		<div>
-			<h2 class="title">@RenderSection("Title")</h2>
-		</div>
-	@RenderBody()
-	</div>
+	</main>
+
+    @* Bootstrap JS files *@
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+	@RenderSection("PageScripts", false)
 </body>
 </html>

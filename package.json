@@ -1,0 +1,25 @@
+{
+  "name": "heartsandbones",
+  "description": "This is a basic web app to take in a group of items and will randomize them into groups based on a set of rules and modes.",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-notify": "2.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "HeartsAndBones"
+  ]
+}
