@@ -159,6 +159,9 @@
     <Content Include="Styles\fonts\roboto\Roboto-Medium.woff" />
     <Content Include="Styles\fonts\roboto\Roboto-Regular.woff" />
     <Content Include="Styles\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="Images\intro-bkg.jpg" />
+    <Content Include="Styles\index.scss" />
+    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />

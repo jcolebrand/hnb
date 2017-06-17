@@ -12,47 +12,18 @@
 
 	<link rel="stylesheet" href="/Styles/materialize/materialize.min.css">
 	<link rel="stylesheet" href="/Styles/site.min.css">
+
+	@RenderSection("Styles", false)
 </head>
 
 <body>
-	<header class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<a class="brand-logo center f-marker" href="/">Hearts&amp;Bones</a>
-				<a href="#" data-activates="sidebar_nav" class="button-collapse"><i class="material-icons">menu</i></a>
-				
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li class="nav-item"><a class="nav-link" href="/Home/Meet">Meet the pups</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Adopt">Adopt</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Foster">Foster</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Volunteer">Volunteer</a></li>
-				</ul>
-
-				<ul class="side-nav" id="sidebar_nav">
-					<li class="side-item"><a class="side-link" href="/Home/Meet">Meet the pups</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Adopt">Adopt</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Foster">Foster</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Volunteer">Volunteer</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/About">About</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Blog">Blog</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Contact">Contact</a></li>
-					<li class="side-item"><a class="side-link" href="/Home/Donate">Donate</a></li>
-				</ul>
-				
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li class="nav-item"><a class="nav-link" href="/Home/About">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Blog">Blog</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Contact">Contact</a></li>
-					<li class="nav-item"><a class="nav-link" href="/Home/Donate">Donate</a></li>
-				</ul>
-			</div>
-		</nav>
-    </header>
+	@Html.Partial("/Views/Shared/_Header.cshtml")
 		
-    <main class="container">
-		<h2 class="title">@RenderSection("Title")</h2>
+    <main>
+		@RenderSection("BeforeBody", false)
 			
-		<div class="body-content" id="content">	
+		<div class="container" id="content">	
+			@RenderSection("Title", false)
 	    	@RenderBody()
 		</div>
 	</main>
@@ -60,7 +31,8 @@
     @* Bootstrap JS files *@
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="/Scripts/site.js" type="text/javascript"></script>
 
-	@RenderSection("PageScripts", false)
+	@RenderSection("Scripts", false)
 </body>
 </html>
