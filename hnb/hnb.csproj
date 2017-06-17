@@ -77,17 +77,33 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Images\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\Adopt\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="Views\Donate\" />
+    <Folder Include="Views\Foster\" />
+    <Folder Include="Views\Meet\" />
+    <Folder Include="Views\Volunteer\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MeetController.cs" />
+    <Compile Include="Controllers\AdoptController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
+    <Compile Include="Controllers\DonateController.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\FosterController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\MainPageController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\MainPage\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -95,14 +111,6 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Images\Heart.svg" />
-    <Content Include="Views\Home\Adopt.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Meet.cshtml" />
-    <Content Include="Views\Home\Foster.cshtml" />
-    <Content Include="Views\Home\Volunteer.cshtml" />
-    <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Donate.cshtml" />
     <Content Include="Styles\includes\_global.scss" />
     <Content Include="Styles\includes\_layout.scss" />
     <Content Include="Styles\includes\_page.scss" />
@@ -162,6 +170,15 @@
     <Content Include="Images\intro-bkg.jpg" />
     <Content Include="Styles\index.scss" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Volunteer\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Adopt\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Donate\Index.cshtml" />
+    <Content Include="Views\Foster\Index.cshtml" />
+    <Content Include="Views\Meet\Index.cshtml" />
+    <Content Include="Views\Adopt\FAQ.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
