@@ -160,7 +160,6 @@
     <Content Include="Styles\site.css" />
     <Content Include="Styles\site.min.css" />
     <Content Include="Styles\site.scss" />
-    <Content Include="Scripts\lib\st-portable-pet-list.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Styles\fonts\roboto\Roboto-Bold.woff" />
     <Content Include="Styles\fonts\roboto\Roboto-Light.woff" />
@@ -182,7 +181,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
-    <None Include="Scripts\lib\.DS_Store" />
     <None Include="Styles\fonts\roboto\Roboto-Bold.woff2" />
     <None Include="Styles\fonts\roboto\Roboto-Light.woff2" />
     <None Include="Styles\fonts\roboto\Roboto-Medium.woff2" />

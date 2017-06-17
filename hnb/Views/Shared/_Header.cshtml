@@ -1,4 +1,10 @@
 <header>
+    <ul id="dropdown_adopt" class="dropdown-content">
+        <li><a class="nav-link" href="/Adopt">Apply Now</a></li>
+        <li><a class="nav-link" href="/Adopt/FAQ">FAQ</a></li>
+        <!-- <li class="divider"></li>
+        <li><a href="#!">three</a></li> -->
+    </ul>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper">
@@ -7,7 +13,8 @@
                 
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li class="nav-item"><a class="nav-link" href="/Meet">Meet the pups</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Adopt">Adopt</a></li>
+					<li><a class="dropdown-button nav-link" href="#!" data-activates="dropdown_adopt">Adoption<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="/Adopt">Adopt</a></li> -->
                     <!--<li class="nav-item"><a class="nav-link" href="/Foster">Foster</a></li>-->
                     <li class="nav-item"><a class="nav-link" href="/Volunteer">Volunteer</a></li>
                 </ul>
@@ -17,7 +24,7 @@
                     @* @Lance this just won't be there at all for now  <li class="nav-item"><a class="nav-link" href="/Blog">Blog</a></li>*@
                     <li class="nav-item"><a class="nav-link" href="/Contact">Contact</a></li>
                     <li class="nav-item">
-                        <a id="donate" class="nav-link" name="submit" title="PayPal - The safer, easier way to pay online!" href="https://www.paypal.com/us/fundraiser/charity/2380536">Donate</a>
+                        <a target="_blank" id="donate" class="nav-link" name="submit" title="PayPal - The safer, easier way to pay online!" href="https://www.paypal.com/us/fundraiser/charity/2380536">Donate</a>
                     </li>
                 </ul>
             </div>
