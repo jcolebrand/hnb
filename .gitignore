@@ -291,7 +291,5 @@ __pycache__/
 *.DS_Store
 
 #Front end related
-*.css
-*.min.css
 *.map
 *.min.js
