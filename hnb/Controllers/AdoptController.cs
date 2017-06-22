@@ -13,7 +13,12 @@ namespace hnb.Controllers
             return View ();
         }
 
-        public ActionResult FAQ()
+        public ActionResult BeforeYouAdopt()
+        {
+            return View();
+        }
+
+        public ActionResult AfterAdoption()
         {
             return View();
         }

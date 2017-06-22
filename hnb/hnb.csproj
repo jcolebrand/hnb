@@ -177,7 +177,8 @@
     <Content Include="Views\Donate\Index.cshtml" />
     <Content Include="Views\Foster\Index.cshtml" />
     <Content Include="Views\Meet\Index.cshtml" />
-    <Content Include="Views\Adopt\FAQ.cshtml" />
+    <Content Include="Views\Adopt\BeforeYouAdopt.cshtml" />
+    <Content Include="Views\Adopt\AfterAdoption.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
