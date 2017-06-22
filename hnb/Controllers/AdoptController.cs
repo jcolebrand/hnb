@@ -22,5 +22,10 @@ namespace hnb.Controllers
         {
             return View();
         }
+
+        public ActionResult ApplyNow()
+        {
+            return View();
+        }
     }
 }

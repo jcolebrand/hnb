@@ -179,6 +179,8 @@
     <Content Include="Views\Meet\Index.cshtml" />
     <Content Include="Views\Adopt\BeforeYouAdopt.cshtml" />
     <Content Include="Views\Adopt\AfterAdoption.cshtml" />
+    <Content Include="Views\Adopt\ApplyNow.cshtml" />
+    <Content Include="Views\Meet\WhereAreOurDogsFrom.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
