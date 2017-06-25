@@ -7,8 +7,32 @@
   width: 100%;
   height: calc(100vh - 64px); }
 
+.interlude {
+  padding: 50px 0; }
+  .interlude p {
+    font-size: 16px; }
+  .interlude .showcase {
+    margin-top: 15px;
+    margin-bottom: 0; }
+    .interlude .showcase .showcase-item {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+
+.action-drawer {
+  text-align: center;
+  padding: 15px 0; }
+  .action-drawer .row {
+    margin-bottom: 0; }
+  .action-drawer .material-icons {
+    display: block; }
+  .action-drawer a:hover {
+    cursor: pointer; }
+  .action-drawer .action-item {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+
 .words-animation {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding: 10px; }
   .words-animation .words-headline {
@@ -26,7 +50,7 @@
     position: relative;
     text-indent: 10px; }
     .words-animation .words-list span {
-      animation: rotateWords 15s linear infinite 0s;
+      animation: 15s linear 15s infinite rotateWords;
       margin-right: -50%;
       opacity: 0;
       overflow: hidden;
@@ -35,15 +59,15 @@
       top: 10px;
       width: 100%; }
       .words-animation .words-list span:nth-child(2) {
-        animation-delay: 2.5s; }
+        animation-delay: 3s; }
       .words-animation .words-list span:nth-child(3) {
-        animation-delay: 5s; }
+        animation-delay: 6s; }
       .words-animation .words-list span:nth-child(4) {
-        animation-delay: 7.5s; }
+        animation-delay: 9s; }
       .words-animation .words-list span:nth-child(5) {
-        animation-delay: 10s; }
+        animation-delay: 12s; }
       .words-animation .words-list span:nth-child(6) {
-        animation-delay: 12.5s; }
+        animation-delay: 15s; }
 
 @keyframes rotateWords {
   0% {
@@ -61,3 +85,15 @@
     height: 60px; }
   100% {
     opacity: 0; } }
+
+.parallax-container {
+  display: flex;
+  align-items: center; }
+  .parallax-container .parallax img {
+    height: 1000px; }
+  .parallax-container .parallax.last {
+    background: #EEFF41; }
+    .parallax-container .parallax.last img {
+      bottom: 180px; }
+  .parallax-container .caption {
+    margin: 0 auto; }

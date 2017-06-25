@@ -9,15 +9,11 @@
 	@Html.Partial("/Views/Shared/_Header.cshtml")
 		
     <main>			
-		<div class="container" id="content">	
-			@RenderSection("Title", false)
-
-			@RenderBody()
-		</div>
+		@RenderBody()
 	</main>
 
 	@Html.Partial("/Views/Shared/_Footer.cshtml")
-
+	
 	@Html.Partial("/Views/Shared/_Scripts.cshtml")
 	@RenderSection("Scripts", false)
 </body>

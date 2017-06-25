@@ -1,20 +1,5 @@
-﻿@section BeforeBody {
-    <div class="full-page">
-
-        <section class="words-animation f-marker">
-            <h4 class="words-headline">
-                <span>We are</span>
-
-                <div class="words-list">
-                    <span>rebels</span>
-                    <span>outlaws</span>
-                    <span>movers</span>
-                    <span>shakers</span>
-                    <span>change-makers</span>
-                </div>
-            </h4>
-        </section>
-    </div>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.Index.cshtml";
 }
 
 @section Styles {
@@ -22,5 +7,115 @@
 }
 
 @section Scripts {
-
+    <script type="text/javascript">
+        // Initiate the parallax sections of the index view.
+        $('.parallax').parallax({
+            height: 400
+        });
+    </script>
 }
+
+<div class="full-page">
+
+    <section class="words-animation f-marker">
+        <h4 class="words-headline">
+            <span>We are</span>
+
+            <div class="words-list">
+                <span>dog lovers</span>
+                <span>rebels</span>
+                <span>outlaws</span>
+                <span>rescuers</span>
+            </div>
+        </h4>
+    </section>
+</div>
+
+<div class="container interlude">
+    <div class="row">
+        <div class="col s12 l6">
+            <h3 class="f-marker">Who we are</h3>
+            <p>Hearts &amp; Bones Rescue is an <strong>all-breed</strong> dog rescue composed of a network of fosters and volunteers who collaborate to rescue dogs from shelters in the south to find them loving, forever homes. Every day, there are thousands of animals killed in America's shelters because they do not have homes.</p>
+        </div>
+
+        <div class="col s12 l6">
+            <h3 class="f-marker">Hearts &amp; Bones</h3>
+            <p>Rescue requires not only the heart, or compassion and love, for the animals that are in need, but also the bones — the grit, the strength, and the persistence to rescue these dogs from their former lives to give them the opportunity at a great, forever home. We are equal parts - Hearts &amp; Bones.</p>
+        </div>
+    </div>
+</div>
+
+<div class="action-drawer lime accent-2">
+    <div class="container">
+        <div class="row">
+            <div class="action-item col s6 l3">
+                <a class="h4" href="/Meet">
+                    <i class="material-icons grey-text text-darken-4 medium">pets</i>
+                    <span class="underline">Our Pups</span>
+                </a>
+            </div>
+            
+            <div class="action-item col s6 l3">
+                <a class="h4" href="/Adopt">
+                    <i class="material-icons grey-text text-darken-4 medium">favorite</i>
+                    <span class="underline">Adopt</span>
+                </a>
+            </div>
+
+            <div class="action-item col s6 l3">
+                <a class="h4" href="/Foster">
+                    <i class="material-icons grey-text text-darken-4 medium">home</i>
+                    <span class="underline">Foster</span>
+                </a>
+            </div>
+
+            <div class="action-item col s6 l3">
+                <a class="h4" href="/Volunteer">
+                    <i class="material-icons grey-text text-darken-4 medium">person_pin</i>
+                    <span class="underline">Volunteer</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* First parallax section *@
+<div class="parallax-container">
+    <div class="parallax first"><img src="/images/parallax-2.jpg"></div>
+</div>
+
+<div class="container interlude center-align">
+    <h2 class="f-marker">What we do differently</h2>
+    <div class="row showcase">
+        <div class="showcase-item col s12 m6">
+            <i class="material-icons large">pets</i>
+            <h5>Foster Only</h5>
+            <p>We are a foster only rescue. Our available dogs are in loving homes interacting with people and other animals to understand how they will behave with their forever family.</p>
+        </div>
+
+        <div class="showcase-item col s12 m6">
+            <i class="material-icons large">blur_on</i>
+            <h5>Fully Vetted</h5>
+            <p>Our dogs are fully vetted and spayed / neutered before they are available for adoption - not just age appropriate shots, but any other medical issue that needs addressed.</p>
+        </div>
+
+        <div class="showcase-item col s12 m6">
+            <i class="material-icons large">memory</i>
+            <h5>Always There</h5>
+            <p>Each dog comes with a registered microchip and we're your alternate contact! In the event that your dog is lost you're out of town, we will go bust him / her out of the shelter.</p>
+        </div>
+
+        <div class="showcase-item col s12 m6">
+            <i class="material-icons large">assignment</i>
+            <h5>The Right Match</h5>
+            <p>Once your application is approved this is applicable to any of our available dogs, so if you don't find the right dog straight away, we'll help match you with the right one.</p>
+        </div>
+        
+    </div>
+</div>
+
+@* Second parallax section *@
+<div class="parallax-container">
+    <div class="parallax last"><img src="/images/parallax-3.jpg"></div>
+    <h3 class="caption white-text">Rescue is our religion</h3>
+</div>

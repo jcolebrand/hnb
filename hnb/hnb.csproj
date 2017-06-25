@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -85,6 +85,7 @@
     <Folder Include="Views\Foster\" />
     <Folder Include="Views\Meet\" />
     <Folder Include="Views\Volunteer\" />
+    <Folder Include="Styles\fonts\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -160,12 +161,8 @@
     <Content Include="Styles\site.css" />
     <Content Include="Styles\site.min.css" />
     <Content Include="Styles\site.scss" />
+    <Content Include="Scripts\lib\st-portable-pet-list.js" />
     <Content Include="Scripts\site.js" />
-    <Content Include="Styles\fonts\roboto\Roboto-Bold.woff" />
-    <Content Include="Styles\fonts\roboto\Roboto-Light.woff" />
-    <Content Include="Styles\fonts\roboto\Roboto-Medium.woff" />
-    <Content Include="Styles\fonts\roboto\Roboto-Regular.woff" />
-    <Content Include="Styles\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="Images\intro-bkg.jpg" />
     <Content Include="Styles\index.scss" />
     <Content Include="Views\Shared\_Header.cshtml" />
@@ -181,15 +178,18 @@
     <Content Include="Views\Adopt\AfterAdoption.cshtml" />
     <Content Include="Views\Adopt\ApplyNow.cshtml" />
     <Content Include="Views\Meet\WhereAreOurDogsFrom.cshtml" />
+    <Content Include="Images\parallax-1.jpg" />
+    <Content Include="Images\parallax-2.jpg" />
+    <Content Include="Images\parallax-3.jpg" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Layout.Index.cshtml" />
+    <Content Include="Views\Shared\_Head.cshtml" />
+    <Content Include="Views\Shared\_Scripts.cshtml" />
+    <Content Include="Styles\fonts\icomoon.ttf" />
+    <Content Include="Styles\fonts\icomoon.woff" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
-    <None Include="Styles\fonts\roboto\Roboto-Bold.woff2" />
-    <None Include="Styles\fonts\roboto\Roboto-Light.woff2" />
-    <None Include="Styles\fonts\roboto\Roboto-Medium.woff2" />
-    <None Include="Styles\fonts\roboto\Roboto-Regular.woff2" />
-    <None Include="Styles\fonts\roboto\Roboto-Thin.woff2" />
-    <None Include="Styles\fonts\.DS_Store" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
