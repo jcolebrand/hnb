@@ -96,4 +96,5 @@
     .parallax-container .parallax.last img {
       bottom: 180px; }
   .parallax-container .caption {
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 15px; }
