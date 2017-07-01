@@ -125,3 +125,9 @@ nav i.material-icons.right {
       text-transform: uppercase; }
     .puppy-crate .puppy-info .material-icons {
       padding-right: 5px; }
+
+.iframe-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .iframe-wrapper iframe {
+    height: 1200px; }

@@ -59,3 +59,12 @@
         }
     }
 }
+
+.iframe-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    iframe {
+        height: 1200px;
+    }
+}
