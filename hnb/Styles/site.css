@@ -99,8 +99,6 @@ nav i.material-icons.right {
     width: 120px; }
   .puppy-crate .puppy-name {
     margin-bottom: 5px; }
-  .puppy-crate .puppy-gender {
-    text-transform: capitalize; }
   .puppy-crate .puppy-location {
     background: #f5f5f5;
     border-radius: 0 0 10px 10px;
@@ -118,8 +116,12 @@ nav i.material-icons.right {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 10px; }
     .puppy-crate .puppy-info small {
       font-size: 13px; }
+    .puppy-crate .puppy-info .puppy-gender {
+      font-size: 10px;
+      text-transform: uppercase; }
     .puppy-crate .puppy-info .material-icons {
       padding-right: 5px; }

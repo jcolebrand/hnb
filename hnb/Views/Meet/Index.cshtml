@@ -14,11 +14,11 @@
             <h5 class="puppy-name">{{ puppy.pet_name }}</h5>
             
             <div class="puppy-info">
-                <small class="valign-wrapper grey-text">
-                    <i class="material-icons tiny">pets</i>{{ puppy.primary_breed }}
+                <small class="valign-wrapper grey-text text-darken-1">
+                    {{ puppy.primary_breed }}
                 </small>
                 <small class="puppy-gender valign-wrapper grey-text">
-                    <i class="material-icons tiny">all_inclusive</i>{{ puppy.sex === 'm' ? 'male' : 'female' }}, {{ puppy.age }}
+                    {{ puppy.sex === 'm' ? 'male' : 'female' }}, {{ puppy.age }}
                 </small>
             </div>
             

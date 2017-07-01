@@ -19,10 +19,6 @@
         margin-bottom: 5px;
     }
 
-    .puppy-gender {
-        text-transform: capitalize;
-    }
-
     .puppy-location {
         background: #f5f5f5;
         border-radius: 0 0 10px 10px;
@@ -47,9 +43,15 @@
         flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 20px;
+        margin-top: 10px;
 
         small {
             font-size: 13px;
+        }
+
+        .puppy-gender {
+            font-size: 10px;
+            text-transform: uppercase;
         }
 
         .material-icons {
