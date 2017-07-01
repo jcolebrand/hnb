@@ -187,6 +187,7 @@
     <Content Include="Views\Shared\_Scripts.cshtml" />
     <Content Include="Styles\fonts\icomoon.ttf" />
     <Content Include="Styles\fonts\icomoon.woff" />
+    <Content Include="Scripts\adopt.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />

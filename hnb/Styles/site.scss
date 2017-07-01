@@ -1,3 +1,44 @@
 @import 'includes/_global.scss';
 @import 'includes/_layout.scss';
 @import 'includes/_page.scss';
+
+.puppy-crate {
+    border-radius: 10px;
+    box-shadow: 0px 10px 90px -40px rgba(0,0,0,0.7);
+    padding-top: 30px;
+    text-align: center;
+
+    .puppy-headshot {
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .puppy-name {
+        margin-bottom: 5px;
+    }
+
+    .puppy-location {
+    background: #f5f5f5;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 11px;
+    padding: 15px;
+    }
+
+    .puppy-info {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        small {
+            font-size: 13px;
+        }
+
+        .material-icons {
+            padding-right: 5px;
+        }
+    }
+}

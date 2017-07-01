@@ -2016,7 +2016,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #eeff41; }
+  border-left: 5px solid #64ffda; }
 
 i {
   line-height: inherit; }
@@ -2055,7 +2055,7 @@ video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #eeff41; }
+    background-color: #64ffda; }
   .pagination li.disabled a {
     cursor: default;
     color: #999; }
@@ -2190,7 +2190,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  background-color: #eeff41; }
+  background-color: #64ffda; }
   .page-footer .footer-copyright {
     overflow: hidden;
     min-height: 50px;
@@ -2327,14 +2327,14 @@ td, th {
     .collection .collection-item:last-child {
       border-bottom: none; }
     .collection .collection-item.active {
-      background-color: #ff8a65;
+      background-color: #81C784;
       color: white; }
       .collection .collection-item.active .secondary-content {
         color: #fff; }
   .collection a.collection-item {
     display: block;
     transition: .25s;
-    color: #ff8a65; }
+    color: #81C784; }
     .collection a.collection-item:not(.active):hover {
       background-color: #ddd; }
   .collection.with-header .collection-header {
@@ -2348,7 +2348,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #ff8a65; }
+  color: #81C784; }
 
 .collapsible .collection {
   margin: 0;
@@ -2380,10 +2380,10 @@ td, th {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: #ff8a65;
+    background-color: #81C784;
     transition: width .3s linear; }
   .progress .indeterminate {
-    background-color: #ff8a65; }
+    background-color: #81C784; }
     .progress .indeterminate:before {
       content: '';
       position: absolute;
@@ -3053,7 +3053,7 @@ td, th {
 
 nav {
   color: #333;
-  background-color: #eeff41;
+  background-color: #64ffda;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -3513,18 +3513,18 @@ small {
 
 .btn:focus, .btn-large:focus,
 .btn-floating:focus {
-  background-color: #ff6332; }
+  background-color: #5eb762; }
 
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #ff8a65;
+  background-color: #81C784;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #ff9d7f; }
+    background-color: #93cf95; }
 
 .btn-floating {
   display: inline-block;
@@ -3536,13 +3536,13 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #ff8a65;
+  background-color: #81C784;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
   vertical-align: middle; }
   .btn-floating:hover {
-    background-color: #ff8a65; }
+    background-color: #81C784; }
   .btn-floating:before {
     border-radius: 0; }
   .btn-floating.btn-large {
@@ -3640,7 +3640,7 @@ button.btn-floating {
     z-index: -1;
     width: 40px;
     height: 40px;
-    background-color: #ff8a65;
+    background-color: #81C784;
     border-radius: 50%;
     transform: scale(0); }
 
@@ -3700,7 +3700,7 @@ button.btn-floating {
       height: 1px; }
     .dropdown-content li > a, .dropdown-content li > span {
       font-size: 16px;
-      color: #ff8a65;
+      color: #81C784;
       display: block;
       line-height: 22px;
       padding: 14px 16px; }
@@ -3766,9 +3766,9 @@ button.btn-floating {
     .side-nav li > a.btn-flat {
       color: #343434; }
     .side-nav li > a.btn:hover, .side-nav li > a.btn-large:hover, .side-nav li > a.btn-large:hover {
-      background-color: #ff9d7f; }
+      background-color: #93cf95; }
     .side-nav li > a.btn-floating:hover {
-      background-color: #ff8a65; }
+      background-color: #81C784; }
     .side-nav li > a > i,
     .side-nav li > a > [class^="mdi-"], .side-nav li > a li > a > [class*="mdi-"],
     .side-nav li > a > i.material-icons {
@@ -3849,7 +3849,7 @@ button.btn-floating {
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active,
 .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #eeff41; }
+  background-color: #64ffda; }
   .side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
   .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active a {
     color: #fff; }
