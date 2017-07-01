@@ -125,11 +125,11 @@
         &.last {
             // HACK: Just in case there are some screen sizes that the image is too far up on
             // we will make the background the same yellow as the footer.
-            background: #EEFF41;
+            background: #64ffda;
         
             img {
                 // HACK: Just want to see more of the image.
-                bottom: 180px;
+                bottom: 170px;
             }
         }
     }
@@ -137,5 +137,11 @@
     .caption {
         margin: 0 auto;
         padding: 0 15px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .parallax-container .parallax img {
+        height: auto;
     }
 }

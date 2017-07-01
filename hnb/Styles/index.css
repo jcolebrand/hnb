@@ -92,9 +92,13 @@
   .parallax-container .parallax img {
     height: 1000px; }
   .parallax-container .parallax.last {
-    background: #EEFF41; }
+    background: #64ffda; }
     .parallax-container .parallax.last img {
-      bottom: 180px; }
+      bottom: 170px; }
   .parallax-container .caption {
     margin: 0 auto;
     padding: 0 15px; }
+
+@media (min-width: 1500px) {
+  .parallax-container .parallax img {
+    height: auto; } }

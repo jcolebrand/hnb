@@ -17,14 +17,22 @@
                 <small class="valign-wrapper grey-text">
                     <i class="material-icons tiny">pets</i>{{ puppy.primary_breed }}
                 </small>
-                <small class="valign-wrapper grey-text">
+                <small class="puppy-gender valign-wrapper grey-text">
                     <i class="material-icons tiny">all_inclusive</i>{{ puppy.sex === 'm' ? 'male' : 'female' }}, {{ puppy.age }}
                 </small>
             </div>
             
-            <div class="puppy-location grey-text">
-                <i class="material-icons tiny">place</i>
-                {{ puppy.addr_city }}, {{ puppy.addr_state_code }}</div>
+            <div class="puppy-location grey-text valign-wrapper">
+                <template v-if="puppy.hasDoppleganger">
+                {{ puppy.destination }}
+                <i class="material-icons split">flight_takeoff</i>
+                </template>
+                
+                <template v-else>
+                <i class="material-icons">pin_drop</i>
+                </template>
+                {{ puppy.addr_city }}, {{ puppy.addr_state_code }}
+            </div>
         </div>
     </div>
 </section>
