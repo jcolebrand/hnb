@@ -5,6 +5,12 @@
   src: local("Freckle Face"), local("FreckleFace-Regular"), url(https://fonts.gstatic.com/s/freckleface/v4/7-B8j9BPJgazdHIGqPNv8xampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
   unicode-range: U+0026; }
 
+@font-face {
+  font-family: 'Pitch';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pitch"), local("Pitch-Semibold"), url("fonts/Pitch_Semibold.woff2") format("woff2"), url("fonts/Pitch_Semibold.woff") format("woff"); }
+
 body {
   display: flex;
   flex-direction: column;
@@ -16,6 +22,10 @@ main {
 h1, h2, h3, h4, h5, h6,
 .f-marker {
   font-family: 'Ampersand', 'Permanent Marker', cursive; }
+
+.f-pitch {
+  font-family: 'Pitch', monospace;
+  line-height: 1.35; }
 
 .h4 {
   color: rgba(0, 0, 0, 0.87);
@@ -33,16 +43,25 @@ strong {
 nav i.material-icons.right {
   margin-left: 0; }
 
-.brand-logo {
-  font-size: 36px; }
+.brand-logo.center {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  .brand-logo.center img {
+    max-height: calc(100% - 20px);
+    max-width: 100%; }
 
 .nav-link {
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Pitch', monospace;
   text-transform: uppercase; }
-  .nav-link:first-child {
-    align-items: center;
-    display: flex;
-    height: 64px; }
+
+.dropdown-content li > a {
+  font-size: 1rem; }
+
+.dropdown-content .nav-link:first-child {
+  align-items: center;
+  display: flex;
+  height: 64px; }
 
 .flex-center {
   display: flex;

@@ -115,7 +115,6 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Images\Heart.svg" />
     <Content Include="Styles\includes\_global.scss" />
     <Content Include="Styles\includes\_layout.scss" />
     <Content Include="Styles\includes\_page.scss" />
@@ -191,9 +190,16 @@
     <Content Include="Styles\fonts\icomoon.ttf" />
     <Content Include="Styles\fonts\icomoon.woff" />
     <Content Include="Scripts\adopt.js" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Styles\includes\_fonts.scss" />
+    <Content Include="Styles\index.css" />
+    <Content Include="Styles\index.min.css" />
+    <Content Include="Styles\fonts\Pitch_Semibold.woff" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
+    <None Include="Styles\index.min.css.map" />
+    <None Include="Styles\fonts\Pitch_Semibold.woff2" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
