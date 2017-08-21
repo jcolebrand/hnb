@@ -195,6 +195,7 @@
     <Content Include="Styles\index.css" />
     <Content Include="Styles\index.min.css" />
     <Content Include="Styles\fonts\Pitch_Semibold.woff" />
+    <Content Include="Views\Volunteer\ApplyNow.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Styles\site.min.css.map" />
