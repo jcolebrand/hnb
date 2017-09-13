@@ -10,8 +10,10 @@
 <section id="puppies" class="row">
     <div class="col s12 m6 l4" v-for="puppy in pets">
         <div class="puppy-crate">
-            <img class="puppy-headshot" :src="puppy.large_results_photo_url" />
-            <h5 class="puppy-name">{{ puppy.pet_name }}</h5>
+			<a target="_blank" :href="puppy.redirect_url">
+                <img class="puppy-headshot" :src="puppy.large_results_photo_url" />
+                <h5 class="puppy-name">{{ puppy.pet_name }}</h5>
+			</a>
             
             <div class="puppy-info">
                 <small class="valign-wrapper grey-text text-darken-1">
@@ -29,7 +31,7 @@
                 </template>
                 
                 <template v-else>
-                <i class="material-icons">pin_drop</i>
+                    <i class="material-icons">pin_drop</i>
                 </template>
                 {{ puppy.addr_city }}, {{ puppy.addr_state_code }}
             </div>

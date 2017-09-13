@@ -39,6 +39,11 @@ $.when(
             }
         });
 
+        allPets.pets.forEach(function(pet){
+            pet.redirect_url = "http://adoptapet.com/pet/" + pet.pet_id;
+            console.log(pet);
+        });
+
         // TODO: Merge the data from these calls.
         createViewModel(allPets);
     });
